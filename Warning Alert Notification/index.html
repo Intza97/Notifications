@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--==================== METADATOS ====================-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--==================== TITULO ====================-->
+  <title>Notifications | Warning Alert Notification</title>
+
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+  <!--==================== ICONOS ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <button>Mostrar Alerta</button>
+  <div class="alert hide">
+     <span class="fas fa-exclamation-circle"></span>
+     <span class="msg">Advertencia: ¡Esta es una alerta de advertencia!</span>
+     <div class="close-btn">
+        <span class="fas fa-times"></span>
+     </div>
+  </div>
+  <!--==================== SCRIPT ====================-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+     $('button').click(function(){
+       $('.alert').addClass("show");
+       $('.alert').removeClass("hide");
+       $('.alert').addClass("showAlert");
+       setTimeout(function(){
+         $('.alert').removeClass("show");
+         $('.alert').addClass("hide");
+       },5000);
+     });
+     $('.close-btn').click(function(){
+       $('.alert').removeClass("show");
+       $('.alert').addClass("hide");
+     });
+  </script>
+</body>
+</html>

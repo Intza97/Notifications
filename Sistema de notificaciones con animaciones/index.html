@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--==================== METADATOS ====================-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--==================== TITULO ====================-->
+  <title>Notifications | sistema de notificaciones con animaciones</title>
+
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+    <!--==================== ICONOS ====================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="contenedor">
+    <div class="hero">
+      <h1 class="titulo">Notificaciones Toast</h1>
+      <div class="contenedor-botones" id="contenedor-botones">
+        <button class="btn exito" data-tipo="exito">Exito</button>
+        <button class="btn error" data-tipo="error">Error</button>
+        <button class="btn info" data-tipo="info">Info</button>
+        <button class="btn warning" data-tipo="warning">Warning</button>
+      </div>
+    </div>
+
+    <div class="contenedor-toast" id="contenedor-toast">
+    </div>
+  </div>
+  <!--==================== SCRIPT ====================-->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
